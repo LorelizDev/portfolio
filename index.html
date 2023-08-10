@@ -7,6 +7,7 @@
   <script src="https://kit.fontawesome.com/2cf1b682c5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -31,29 +32,52 @@
 
     <section id="projects">
       <h2>Proyectos Destacados</h2>
-      <div class="project-list">
-        <div class="project-item">
-          <video width="640" src="/videos/wiki-got.mp4" autoplay loop controls muted></video>
-          <div class="project-details">
-            <h3>Sitio web</h3>
-            <p>Sitio web con funcionalidades CRUD desarrollado en equipo durante el curso Full Stack - Python de codo a codo 4.0, Argentina, donde utilizamos HTML, CSS, JS, Bootstrap, Flask, VUE y python. Además, utilizamos GIT durante el desarrollo del proyecto para el control de versiones. Fue un proyecto muy completo donde pudimos simular un entorno de trabajo real.</p>
-            <p><a href="https://wiki-gameofthrones.netlify.app/" target="_blank">Link al sitio</a></p>
+      <div id="carouselExampleDark" class="project-item carousel slide" data-bs-theme="dark">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <video class="d-block w-100" src="/videos/proyectoWeb-PI.mp4" autoplay loop controls muted></video>
+            <div class="carousel d-md-block">
+              <h5>Sitio web | Django</h5>
+              <p>Sitio web completo desarrollado utilizando el framework Django. El sitio web combina características esenciales como una página de blog, una sección de contacto, una tienda en línea con carrito de compra y un backend integral para gestionar y administrar la plataforma.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <video width="100%" src="/videos/wiki-got.mp4" autoplay loop controls muted></video>
+            <div class="carousel d-md-block">
+              <h5>Sitio web</h5>
+              <p>Sitio web con funcionalidades CRUD desarrollado en equipo durante el curso Full Stack - Python de codo a codo 4.0, Argentina, donde utilizamos HTML, CSS, JS, Bootstrap, Flask, VUE y python. Además, utilizamos GIT durante el desarrollo del proyecto para el control de versiones. Fue un proyecto muy completo donde pudimos simular un entorno de trabajo real.</p>
+              <p><a href="https://wiki-gameofthrones.netlify.app/" target="_blank">Link al sitio</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video src="/videos/calculadora.mp4" autoplay loop controls></video>
+            <div class="carousel d-md-block">
+              <h5>Calculadora | Python</h5>
+              <p>Calculadora desarrollada utilizando la biblioteca tkinter de Python. La calculadora cuenta con una interfaz gráfica de usuario donde los usuarios pueden realizar operaciones matemáticas de manera interactiva.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video src="/videos/reloj_digital.mp4" autoplay loop controls muted></video>
+            <div class="carousel d-md-block">
+              <h5>Reloj digital | Python</h5>
+              <p>Reloj con diferentes funcionalidades, tales como alarma, cronómetro, temporizador, reloj mundial y clima incorporado, all-in-one. El reloj fue desarrollado en python con interfaz gráfica diseñada con la librería tkinter.</p>
+            </div>
           </div>
         </div>
-        <div class="project-item">
-          <video height="380" src="/videos/calculadora.mp4" autoplay loop controls></video>
-          <div class="project-details">
-            <h3>Calculadora</h3>
-            <p>Calculadora desarrollada en python con interfaz gráfica diseñada con la librería tkinter.</p>
-          </div>
-        </div>
-        <div class="project-item">
-          <video height="380" src="/videos/reloj_digital.mp4" autoplay loop controls muted></video>
-          <div class="project-details">
-            <h3>Reloj digital</h3>
-            <p>Reloj con diferentes funcionalidades, tales como alarma, cronómetro, temporizador, reloj mundial y clima incorporado, all-in-one. El reloj fue desarrollado en python con interfaz gráfica diseñada con la librería tkinter.</p>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
@@ -199,5 +223,6 @@
     <p>© 2023 LorelizDev</p>
   </footer>
   <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
