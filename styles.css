@@ -43,6 +43,7 @@ header {
 
 .header-content p {
   font-size: 26px;
+  margin: auto 0;
 }
 
 .profile-photo {
@@ -78,6 +79,7 @@ header {
 
 .header-small .header-content p {
   font-size: 16px;
+  margin: auto 0;
 }
 
 .header-small .profile-photo {
@@ -275,9 +277,10 @@ section {
   margin: 0 10px;
 }
 
-footer {
+footer p{
   text-align: center;
   padding: 5px;
+  margin: auto;
   color: #666;
   background-color: #f0cde5;
 }
